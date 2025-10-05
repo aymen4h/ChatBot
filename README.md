@@ -55,3 +55,31 @@ Summary generation button
 PDF export of conversation
 
 responsive layout
+
+
+🧑‍💻 Installation & Run
+
+Clone the repository:
+
+git clone https://github.com/<your-username>/Multilingual-AI-Assistant.git
+cd chatbot_project
+
+Backend Setup
+cd Backend
+python -m venv venv
+source venv/Scripts/activate  # (Windows)
+# or source venv/bin/activate  (Linux/macOS)
+
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+Frontend Setup
+cd ../frontend
+npm install
+npm start
+
+
+Or simply:
+
+./run.sh
